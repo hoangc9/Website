@@ -1,0 +1,1394 @@
+@font-face {
+    font-family: 'Quicksand-Bold';
+    src: url('fonts/Quicksand-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'CormorantGaramond-MediumItalic';
+    src: url('fonts/CormorantGaramond-MediumItalic.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'lg';
+    src: url('fonts/vjs.eot') format('truetype');
+}
+@font-face {
+    font-family: 'Quicksand-Medium';
+    src: url('fonts/Quicksand-Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Quicksand-Regular';
+    src: url('fonts/Quicksand-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'RobotoSlab-ExtraBold';
+    src: url('fonts/RobotoSlab-ExtraBold.ttf') format('truetype');
+}
+.container {
+    position: relative;
+}
+body {
+    margin: 0; /*Loại bỏ khoảng trắng trong trang*/
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+.menu {
+    margin-left: 20px;
+    display: flex; /* Cho menu thành 1 hàng */
+    position: absolute;
+    top: 5px;
+    left: 0;
+    box-sizing: border-box;
+}
+.menu #house {
+    position: absolute;
+    left: 0;
+    margin-top: 8px;
+}
+.menu #market {
+    position: absolute;
+    top: 2px;
+    left: 1373px;
+    margin-top: 10px;
+}
+.menu li a:hover {
+    color: rgb(220, 240, 7);
+}
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    background-color: #808080;
+    padding: 10px;
+  }
+.dropdown-menu a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 8px 0;
+}
+.menu li:hover .dropdown-menu{
+    display: block;
+}
+#logo{
+    width: 170px;
+    height: 60px;
+    margin-right: 50px;
+}
+.menu li {
+    list-style: none; /*Xóa chấm */
+    margin-right: 110px;
+    margin-top: 10px;
+}
+.menu li a{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-decoration: none; /*Xóa gạch chân*/
+    white-space: nowrap; /*Cho chữ nằm trên 1 hàng*/
+    font-family: Quicksand-Bold;
+    font-size: 18px;
+}
+#tptn {
+    position: absolute;
+    top: 270px;
+    left: 480px;
+    color: aliceblue;
+    font-size: 35px;
+    font-weight: normal;
+    font-style: italic;
+    font-family: CormorantGaramond-MediumItalic;
+}
+#logo-h2 {
+    position: absolute;
+    margin-left: 20px;
+    width: 150px;
+}
+#ttts {
+    position: absolute;
+    left: 480px;
+    top: 295px;
+    right: 300px;
+    font-size: 60px;
+    color: aliceblue;
+    height: 30px;
+    font-family: RobotoSlab-ExtraBold;
+    letter-spacing: 8px; /*Tạo khoảng cách giữa các chữ*/
+}
+#dhn {
+    position: absolute;
+    left: 700px;
+    top: 410px;
+    font-size: 19px;
+    background-color: rgb(203, 195, 82);
+    padding: 15px 30px 15px 30px;
+    border-radius: 30px;
+    font-weight: normal;
+    font-family: Quicksand-Regular;
+}
+#language-vi {
+    position: absolute;
+    left: 1430px;
+    width: 50px;
+    height: 25px;
+    margin-top: 10px;
+}
+#language-en {
+    position: absolute;
+    left: 1480px;
+    width: 50px;
+    height: 25px;
+    margin-top: 10px;
+}
+.menu p {
+    position: absolute;
+    border-radius: 30px;
+    left: 1390px;
+    margin-top: 1px;
+    color: aliceblue;
+    padding: 1px 1px 1px 1px;
+    background-color: rgb(192, 192, 8);
+}
+.page-2 {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 220px;
+}
+.nd {
+    height: 60%;
+    margin-top: 20px;
+    width: 25%;
+    text-align: center;
+    border-right: 1px solid gray;
+    height: 170px;
+    font-family: Quicksand-Medium;
+}
+.page-2 .nd:last-child {
+    border-right: none;
+}
+.page-2 .nd img {
+    height: 70px;
+    width: 80px;
+}
+.page-3 {
+    position: relative;
+    width: 100%;
+    height: 600px;
+}
+.page-3 .background{
+    position: absolute;
+    width: 100%;
+    opacity: 0.7;
+}
+.page-3 .ndpage-3 img{
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    margin-left: 200px;
+    margin-top: 120px;
+}
+.page-3 .ndpage-3 #spm {
+    position: absolute;
+    margin-left: 785px;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 34px;
+    margin-top: 110px;
+    font-family: CormorantGaramond-MediumItalic;
+}
+.page-3 .ndpage-3 #serum {
+    position: absolute;
+    margin-left: 785px;
+    margin-top: 170px;
+    font-size: 32px;
+    font-family: Quicksand-Bold;
+}
+.page-3 .ndpage-3 #p1 {
+    position: absolute;
+    margin-left: 785px;
+    margin-top: 300px;
+    font-family: Quicksand-Medium;
+}
+.page-3 .ndpage-3 #p2 {
+    position: absolute;
+    margin-left: 785px;
+    margin-top: 330px;
+    font-family: Quicksand-Medium;
+}
+.page-3 .ndpage-3 #dhn-page3 {
+    position: absolute;
+    margin-left: 785px;
+    margin-top: 410px;
+    font-size: 19px;
+    background-color: rgb(203, 195, 82);
+    padding: 15px 30px 15px 30px;
+    border-radius: 30px;
+    font-weight: normal;
+    font-family: Quicksand-Regular;
+}
+.page-3 .ndpage-3 #tvgh-page3 {
+    position: absolute;
+    margin-left: 1010px;
+    margin-top: 410px;
+    font-size: 19px;
+    background-color: rgb(255, 255, 255);
+    padding: 15px 30px 15px 30px;
+    border: 2px solid black;
+    border-radius: 30px;
+    font-weight: normal;
+    font-family: Quicksand-Regular;
+}
+.page-4 {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    background-color: rgb(226, 218, 209);
+}
+.page-4 img {
+    width: 150px;
+    height: 150px;
+    margin-left: 45%;
+    opacity: 0.4; /*Độ mờ ảnh*/
+}
+.page-4 h2 {
+    position: absolute;
+    margin-left: 46%;
+    top: 32px;
+    font-size: 32px;
+    white-space: nowrap;
+    font-weight: normal;
+    font-family: CormorantGaramond-MediumItalic;
+}
+.page-4 h6 {
+    position: absolute;
+    margin-left: 735px;
+    top: 88px;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: Quicksand-Medium;
+}
+.sp-1 {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    height: 550px;
+    margin-left: 80px;
+    margin-top: 40px;
+}
+.sp-1 .anhsp1 {
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 15px;
+    width: 270px;
+    height: 400px;
+    background-color: rgb(226, 218, 209);
+}
+.sp-1 .anhsp1 img {
+    opacity: 1;
+    width: 140px;
+    height: 350px;
+    margin-left: 70px;
+    margin-top: 30px;
+}
+.sp-1 h6 {
+    margin-top: 335px;
+    margin-left: 15px;
+    font-family: Quicksand-Medium;
+}
+.sp-1 .cost-sale {
+    position: absolute;
+    margin-top: 445px;
+    margin-left: 15px;
+    text-decoration: line-through; /*Gạch ngang trong chữ*/
+    font-family: Quicksand-Medium;
+    font-size: 14px;
+    color: #808080;
+}
+.sp-1 .cost {
+    position: absolute;
+    margin-top: 445px;
+    margin-left: 80px;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: Quicksand-Medium;
+}
+.sp-1 .rcm {
+    position: absolute;
+    margin-top: 443px;
+    margin-left: 155px;
+    color: red;
+    padding: 2px 2px 2px 2px;
+    border: 1px solid red;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: Quicksand-Medium;
+}
+.sp-1 h4 {
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 480px;
+    font-size: 17px;
+    background-color: rgb(203, 195, 82);
+    padding: 13px 65px 13px 65px;
+    border-radius: 30px;
+    font-weight: normal;
+    font-family: Quicksand-Regular;
+}
+.sp-1 img {
+    position: relative;
+    opacity: 1;
+    width: 40px;
+    height: 40px;
+    margin-top: 485px;
+    margin-left: 240px;
+}
+.sp-2 {
+    position: absolute;
+    background-color: white;
+    width: 300px;
+    height: 550px;
+    top: 24.3%;
+    left: 450px;
+}
+.sp-2 .anhsp2 {
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 15px;
+    width: 270px;
+    height: 400px;
+    background-color: rgb(226, 218, 209);
+}
+.sp-2 .anhsp2 img {
+    opacity: 1;
+    width: 90px;
+    height: 320px;
+    margin-left: 90px;
+    margin-top: 30px;
+}
+.sp-2 h6 {
+    margin-top: 335px;
+    margin-left: 15px;
+    font-family: Quicksand-Medium;
+}
+.sp-2 .cost-sale {
+    position: absolute;
+    margin-top: 445px;
+    margin-left: 15px;
+    text-decoration: line-through; /*Gạch ngang trong chữ*/
+    font-family: Quicksand-Medium;
+    font-size: 14px;
+    color: #808080;
+}
+.sp-2 .cost {
+    position: absolute;
+    margin-top: 445px;
+    margin-left: 80px;
+    font-weight: bold;
+    font-family: Quicksand-Medium;
+    font-size: 15px;
+}
+.sp-2 h4 {
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 480px;
+    font-size: 17px;
+    background-color: rgb(203, 195, 82);
+    padding: 13px 65px 13px 65px;
+    border-radius: 30px;
+    font-weight: normal;
+    font-family: Quicksand-Regular;
+}
+.sp-2 img {
+    position: relative;
+    opacity: 1;
+    width: 40px;
+    height: 40px;
+    margin-top: 485px;
+    margin-left: 240px;
+}
+.sp-3 {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    height: 550px;
+    top: 24.3%;
+    left: 820px;
+}
+.sp-3 .anhsp3 {
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 15px;
+    width: 270px;
+    height: 400px;
+    background-color: rgb(226, 218, 209);
+}
+.sp-3 .anhsp3 img {
+    opacity: 1;
+    width: 80px;
+    height: 300px;
+    margin-left: 90px;
+    margin-top: 45px;
+}
+.sp-3 h6 {
+    margin-top: 335px;
+    margin-left: 15px;
+    font-family: Quicksand-Medium;
+}
+.sp-3 .cost-sale {
+    position: absolute;
+    margin-top: 445px;
+    margin-left: 15px;
+    text-decoration: line-through; /*Gạch ngang trong chữ*/
+    font-size: 14px;
+    font-family: Quicksand-Medium;
+    color: #808080;
+}
+.sp-3 .cost {
+    position: absolute;
+    margin-top: 445px;
+    margin-left: 80px;
+    font-weight: bold;
+    font-family: Quicksand-Medium;
+    font-size: 15px;
+}
+.sp-3 h4 {
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 480px;
+    font-size: 17px;
+    background-color: rgb(203, 195, 82);
+    padding: 13px 65px 13px 65px;
+    border-radius: 30px;
+    font-weight: normal;
+    font-family: Quicksand-Regular;
+}
+.sp-3 img {
+    position: relative;
+    opacity: 1;
+    width: 40px;
+    height: 40px;
+    margin-top: 485px;
+    margin-left: 240px;
+}
+.sp-4 {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    height: 550px;
+    top: 24.3%;
+    left: 1190px;
+}
+.sp-4 .anhsp4 {
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 15px;
+    width: 270px;
+    height: 400px;
+    background-color: rgb(226, 218, 209);
+}
+.sp-4 .anhsp4 img {
+    opacity: 1;
+    width: 80px;
+    height: 300px;
+    margin-left: 90px;
+    margin-top: 45px;
+}
+.sp-4 h6 {
+    margin-top: 335px;
+    margin-left: 15px;
+    font-family: Quicksand-Medium;
+}
+.sp-4 .cost-sale {
+    position: absolute;
+    margin-top: 445px;
+    margin-left: 15px;
+    text-decoration: line-through; /*Gạch ngang trong chữ*/
+    font-size: 14px;
+    font-family: Quicksand-Medium;
+    color: #808080;
+}
+.sp-4 .cost {
+    position: absolute;
+    margin-top: 445px;
+    margin-left: 80px;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: Quicksand-Medium;
+}
+.sp-4 h4 {
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 480px;
+    font-size: 17px;
+    background-color: rgb(203, 195, 82);
+    padding: 13px 65px 13px 65px;
+    border-radius: 30px;
+    font-weight: normal;
+    font-family: Quicksand-Regular;
+}
+.sp-4 img {
+    position: absolute;
+    opacity: 1;
+    width: 40px;
+    height: 40px;
+    margin-top: 485px;
+    margin-left: 240px;
+} 
+.page-5 {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    background-color: rgb(226, 218, 209);
+}
+.page-5 h2 {
+    position: absolute;
+    margin-left: 40%;
+    top: 32px;
+    font-size: 32px;
+    white-space: nowrap;
+    font-weight: normal;
+    font-family: CormorantGaramond-MediumItalic;
+}
+.page-5 h6 {
+    position: absolute;
+    margin-left: 43%;
+    top: 88px;
+    font-size: 15px;
+    font-weight: normal;
+    font-family: Quicksand-Medium;
+}
+.page-5 .imgmini {
+    width: 150px;
+    height: 150px;
+    margin-left: 45%;
+    opacity: 0.4; /*Độ mờ ảnh*/
+}
+.page-5 .ndpage-5 img {
+    width: 530px;
+    height: 450px;
+    margin-left: 200px;
+    margin-top: 80px;
+}
+.page-5 .ndpage-5 h2 {
+    position: absolute;
+    margin-left: 820px;
+    margin-top: 250px;
+    font-style: normal;
+    font-size: 36px;
+    font-family: Quicksand-Bold;
+}
+.page-5 .ndpage-5 .cost-old {
+    position: absolute;
+    top: 325px;
+    margin-left: 820px;
+    text-decoration: line-through; /*Gạch ngang trong chữ*/
+    font-size: 20px;
+    font-family: Quicksand-Medium;
+    color: #808080;
+}
+.page-5 .ndpage-5 .cost {
+    position: absolute;
+    top: 320px;
+    margin-left: 930px;
+    font-size: 22px;
+    color: red;
+    font-weight: bolder;
+    font-family: Quicksand-Medium;
+}
+.page-5 .ndpage-5 .sale {
+    position: absolute;
+    top: 327px;
+    margin-left: 1045px;
+    color: red;
+    padding: 2px 2px 2px 2px;
+    border: 1px solid red;
+    border-radius: 5px;
+    font-family: Quicksand-Medium;
+}
+.page-5 .ndpage-5 #nd {
+    position: absolute;
+    top: 380px;
+    margin-left: 820px;
+    text-align: left;
+    font-family: Quicksand-Medium;
+}
+.page-5 .ndpage-5 #nd2 {
+    position: absolute;
+    top: 440px;
+    margin-left: 820px;
+    font-family: Quicksand-Medium;
+}
+.page-5 .ndpage-5 #dhn-page5 {
+    position: absolute;
+    margin-left: 820px;
+    top: 500px;
+    font-size: 19px;
+    background-color: rgb(203, 195, 82);
+    padding: 15px 30px 15px 30px;
+    border-radius: 30px;
+    font-weight: normal;
+    font-family: Quicksand-Regular;
+}
+.page-5 .ndpage-5 #tvgh-page5 {
+    position: absolute;
+    margin-left: 1045px;
+    top: 498px;
+    font-size: 20px;
+    background-color: rgb(226, 218, 209);
+    padding: 15px 30px 15px 30px;
+    border: 2px solid black;
+    border-radius: 30px;
+    font-weight: normal;
+    font-family: Quicksand-Regular;
+}
+.page-6 {
+    position: relative;
+    width: 100%;
+    height: 760px;
+    background-color: rgb(226, 218, 209);
+}
+.page-6 .bgr-top {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(247, 241, 235);
+}
+.page-6 .bgr-top .bgr {
+    position: absolute;
+    opacity: 0.2;
+}
+.page-6 .bgr2 {
+    position: absolute;
+    width: 400px;
+    height: 640px;
+    margin-top: 55px;
+    margin-left: 90px;
+    border-top-right-radius: 200px;
+    border-top-left-radius: 200px;
+    outline: 2px solid black; /*Viền ảnh*/
+    outline-offset: 10px; /*Khoảng cách*/
+}
+.page-6 .imgmini-page6 {
+    width: 130px;
+    height: 150px;
+    margin-left: 61%;
+    margin-top: 120px;
+    opacity: 0.4; /*Độ mờ ảnh*/
+}
+.page-6 #sale {
+    position: absolute;
+    margin-left: 60%;
+    top: 145px;
+    font-size: 32px;
+    white-space: nowrap;
+    font-weight: normal;
+    font-style: italic;
+    font-family: CormorantGaramond-MediumItalic;
+}
+.page-6 #trainghiem {
+    position: absolute;
+    margin-left: 845px;
+    top: 200px;
+    font-size: 15px;
+    font-weight: normal;
+    font-family: Quicksand-Medium;
+}
+.page-6 .time-container {
+    position: absolute;
+    display: flex;
+    width: 354px;
+    height: 116px;
+    margin-left: 830px;
+    margin-top: 23px;
+}
+.page-6 .time {
+    border-right: 1px solid gray;
+    height: 65px;
+    text-align: center;
+    margin-left: 45px;
+    padding-right: 40px;
+}
+.page-6 .time:last-child {
+    border-right: none;
+}
+.page-6 .time h2 {
+    margin-top: 0;
+    font-family: Quicksand-Bold;
+}
+.page-6 .time .time-text {
+    font-size: 15px;
+    font-weight: normal;
+    margin-top: 0;
+    font-family: Quicksand-Medium;
+}
+.page-6 .sp1 {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    left: 535px;
+    top: 190px;
+    width: 460px;
+    height: 186px;
+    border-radius: 5px;
+}
+.page-6 .sp1 .img-sp1 {
+    position: absolute;
+    background-color: rgb(226, 218, 209);
+    margin: 15px 0px 15px 15px;
+    width: 156px;
+    height: 156px;
+    border-radius: 10px;
+}
+.page-6 .sp1 .img-sp1 img {
+    width: 50px;
+    height: 130px;
+    margin: 10px 50px 10px 50px;
+}
+.page-6 .sp1 h6 {
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 190px;
+    font-size: 15px;
+    font-weight: normal;
+    font-family: Quicksand-Medium;
+}
+.page-6 .sp1 #cost-old {
+    position: absolute;
+    margin-top: 55px;
+    margin-left: 190px;
+    text-decoration: line-through;
+    font-family: Quicksand-Medium;
+    font-size: 14px;
+    color: #808080;
+}
+.page-6 .sp1 #cost {
+    position: absolute;
+    margin-left: 190px;
+    margin-top: 80px;
+    font-size: 18px;
+    font-family: Quicksand-Medium;
+}
+.page-6 .sp1 #sale-percent {
+    position: absolute;
+    margin-top: 77px;
+    margin-left: 275px;
+    color: red;
+    padding: 4px 4px 4px 4px;
+    border: 1px solid red;
+    border-radius: 5px;
+    font-family: Quicksand-Medium;
+}
+.page-6 .sp1 h4 {
+    position: absolute;
+    margin-left: 190px;
+    margin-top: 120px;
+    font-size: 18px;
+    background-color: rgb(203, 195, 82);
+    padding: 13px 55px 13px 55px;
+    border-radius: 30px;
+    font-weight: normal;
+    font-family: Quicksand-Regular;
+}
+.page-6 .sp1 img {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    margin-left: 400px;
+    margin-top: 123px;
+}
+.page-6 .sp2 {
+    position: relative;
+    background-color: white;
+    left: 1050px;
+    top: 4px;
+    width: 460px;
+    height: 186px;
+    border-radius: 5px;
+}
+.page-6 .sp2 .img-sp2 {
+    position: absolute;
+    background-color: rgb(226, 218, 209);
+    margin: 15px 0px 15px 15px;
+    width: 156px;
+    height: 156px;
+    border-radius: 10px;
+}
+.page-6 .sp2 .img-sp2 img {
+    width: 55px;
+    height: 145px;
+    margin: 10px 50px 10px 50px;
+}
+.page-6 .sp2 h6 {
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 190px;
+    font-size: 15px;
+    font-weight: normal;
+    font-family: Quicksand-Medium;
+}
+.page-6 .sp2 #cost-old {
+    position: absolute;
+    margin-top: 55px;
+    margin-left: 190px;
+    text-decoration: line-through;
+    font-family: Quicksand-Medium;
+    font-size: 14px;
+    color: #808080;
+}
+.page-6 .sp2 #cost {
+    position: absolute;
+    margin-left: 190px;
+    margin-top: 80px;
+    font-size: 18px;
+    font-family: Quicksand-Medium;
+}
+.page-6 .sp2 #sale-percent {
+    position: absolute;
+    margin-top: 77px;
+    margin-left: 275px;
+    color: red;
+    padding: 4px 4px 4px 4px;
+    border: 1px solid red;
+    border-radius: 5px;
+    font-family: Quicksand-Medium;
+}
+.page-6 .sp2 h4 {
+    position: absolute;
+    margin-left: 190px;
+    margin-top: 120px;
+    font-size: 18px;
+    background-color: rgb(203, 195, 82);
+    padding: 13px 55px 13px 55px;
+    border-radius: 30px;
+    font-weight: normal;
+    font-family: Quicksand-Regular;
+}
+.page-6 .sp2 img {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    margin-left: 400px;
+    margin-top: 123px;
+}
+.page-7 {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-color: rgb(247, 241, 235);
+}
+.page-7 img {
+    position: relative;
+    opacity: 0.2;
+    width: 100%;
+}
+.page-7 .imgmini {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 710px;
+    opacity: 0.4;
+    top: 20px;
+}
+.page-7 h2 {
+    position: absolute;
+    margin-left: 46%;
+    top: 45px;
+    font-size: 32px;
+    white-space: nowrap;
+    font-weight: normal;
+    font-family: CormorantGaramond-MediumItalic;
+}
+.page-7 h6 {
+    position: absolute;
+    margin-left: 665px;
+    top: 110px;
+    font-size: 15px;
+    font-weight: normal;
+    font-family: Quicksand-Medium;
+}
+.page-7 .kh1 {
+    position: absolute;
+    background-color: rgb(226, 218, 209);
+    width: 676px;
+    height: 300px;
+    margin-left: 74px;
+    top: 195px;
+}
+.page-7 #reply {
+    margin-left: 320px;
+}
+.page-7 .kh1 h3 {
+    position: absolute;
+    margin-left: 210px;
+    top: 60px;
+    font-size: 20px;
+    font-family: Quicksand-Bold;
+}
+.page-7 .kh1 p {
+    position: absolute;
+    margin-left: 100px;
+    top: 110px;
+    font-size: 17px;
+    font-family: Quicksand-Medium;
+}
+.page-7 .kh1 #image-kh1 {
+    position: absolute;
+    opacity: 1;
+    width: 55px;
+    height: 55px;
+    left: 250px;
+    top: 185px;
+}
+.page-7 .kh1 #khachhang1 {
+    position: absolute;
+    font-size: 17px;
+    top: 150px;
+    margin-left: 320px;
+    font-family: Quicksand-Medium;
+}
+.page-7 .kh1 .star {
+    position: absolute;
+    margin-left: 320px;
+    top: 215px;
+}
+.page-7 .kh2 {
+    position: absolute;
+    background-color: rgb(226, 218, 209);
+    width: 676px;
+    height: 300px;
+    margin-left: 820px;
+    top: 195px;
+}
+.page-7 #reply {
+    margin-left: 320px;
+}
+.page-7 .kh2 h3 {
+    position: absolute;
+    margin-left: 240px;
+    top: 60px;
+    font-size: 20px;
+    font-family: Quicksand-Bold;
+}
+.page-7 .kh2 p {
+    position: absolute;
+    margin-left: 110px;
+    top: 110px;
+    font-size: 17px;
+    text-align: center;
+    font-family: Quicksand-Medium;
+}
+.page-7 .kh2 #image-kh2 {
+    position: absolute;
+    opacity: 1;
+    width: 55px;
+    height: 55px;
+    left: 250px;
+    top: 185px;
+}
+.page-7 .kh2 #khachhang2 {
+    position: absolute;
+    font-size: 17px;
+    top: 150px;
+    margin-left: 320px;
+    font-family: Quicksand-Medium;
+}
+.page-7 .kh2 .star {
+    position: absolute;
+    margin-left: 320px;
+    top: 215px;
+}
+.page-7 .kh2 #star0 {
+    opacity: 0.3;
+}
+.page-8 {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background-color: rgb(226, 218, 209);
+}
+.page-8 h2 {
+    position: absolute;
+    margin-left: 42%;
+    top: 32px;
+    font-size: 32px;
+    white-space: nowrap;
+    font-weight: normal;
+    font-family: CormorantGaramond-MediumItalic;
+}
+.page-8 h6 {
+    position: absolute;
+    margin-left: 47%;
+    top: 88px;
+    font-size: 15px;
+    font-weight: normal;
+    font-family: Quicksand-Medium;
+}
+.page-8 img {
+    width: 150px;
+    height: 150px;
+    margin-left: 45%;
+    opacity: 0.4; /*Độ mờ ảnh*/
+}
+.page-8 .nd {
+    width: 1425px;
+    height: 400px;
+    margin-left: 70px;
+    justify-content: space-between;
+    display: flex;
+    border-right: none;
+}
+.page-8 .nd .nd1 {
+    width: 32%;
+    height: 100%;
+}
+.page-8 .nd .hinhanh {
+    width: 100%;
+    height: 260px;
+    opacity: 1;
+    margin-left: 0;
+}
+.page-8 .nd .tieude {
+    position: absolute;
+    margin-left: 0;
+    margin-top: 0;
+    font-size: 20px;
+    text-align: left;
+    font-family: Quicksand-Bold;
+}
+.page-8 .nd .noidung {
+    position: absolute;
+    margin-left: 0;
+    margin-top: 55px;
+    text-align: left;
+    font-size: 15px;
+    font-family: Quicksand-Medium;
+}
+.page-8 .nd2 {
+    width: 33%;
+    height: 100%;
+}
+.page-8 .nd3 {
+    width: 32%;
+    height: 100%;
+}
+.page-8 h4 {
+    position: absolute;
+    margin-left: 45%;
+    margin-top: 620px;
+    font-size: 18px;
+    background-color: rgb(203, 195, 82);
+    padding: 15px 40px 15px 40px;
+    border-radius: 30px;
+    font-weight: normal;
+    font-family: Quicksand-Regular;
+}
+.page-9 {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background-color: rgb(247, 241, 235);
+}
+.page-9 img {
+    position: absolute;
+    opacity: 0.2;
+    width: 100%;
+}
+.page-9 #imgmini {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    margin-left: 45%;
+    opacity: 0.4;
+}
+.page-9 h2 {
+    position: absolute;
+    margin-left: 730px;
+    top: 32px;
+    font-size: 32px;
+    white-space: nowrap;
+    font-weight: normal;
+    font-style: italic;
+}
+.page-9 h6 {
+    position: absolute;
+    margin-left: 705px;
+    top: 88px;
+    font-size: 15px;
+    font-weight: normal;
+}
+.page-9 h4 {
+    position: absolute;
+    margin-left: 45%;
+    margin-top: 620px;
+    font-size: 18px;
+    background-color: rgb(203, 195, 82);
+    padding: 15px 40px 15px 40px;
+    border-radius: 30px;
+    font-weight: normal;
+    font-family: Quicksand-Regular;
+}
+.page-9 .nd {
+    top: 150px;
+    position: absolute;
+    width: 1425px;
+    height: 400px;
+    margin-left: 70px;
+    justify-content: space-between;
+    display: flex;
+    border-right: none;
+}
+.page-9 .nd .nd1 {
+    width: 32%;
+    height: 100%;
+}
+.page-9 .nd .nd1 .hinhanh {
+    width: 32%;
+    height: 260px;
+    opacity: 1;
+    left: 0;
+}
+.page-9 .nd .nd1 .tieude {
+    position: absolute;
+    left: 0;
+    top: 240px;
+    font-size: 20px;
+    text-align: left;
+    font-size: 20px;
+}
+.page-9 .nd .nd1 .noidung {
+    position: absolute;
+    margin-left: 0;
+    top: 300px;
+    text-align: left;
+    font-size: 15px;
+}
+.page-9 .nd .nd2 {
+    width: 32%;
+    height: 100%;
+}
+.page-9 .nd .nd2 .hinhanh2 {
+    width: 32%;
+    height: 260px;
+    opacity: 1;
+    left: 484px;
+}
+.page-9 .nd .nd2 .tieude2 {
+    position: absolute;
+    left: 484px;
+    top: 240px;
+    font-size: 20px;
+    text-align: left;
+    font-size: 20px;
+}
+.page-9 .nd .nd2 .noidung2 {
+    position: absolute;
+    margin-left: 0;
+    top: 300px;
+    text-align: left;
+    font-size: 15px;
+}
+.page-9 .nd .nd3 {
+    width: 32%;
+    height: 100%;
+}
+.page-9 .nd .nd3 .hinhanh3 {
+    width: 32%;
+    height: 260px;
+    opacity: 1;
+    left: 969px;
+}
+.page-9 .nd .nd3 .tieude3 {
+    position: absolute;
+    left: 969px;
+    top: 240px;
+    font-size: 20px;
+    text-align: left;
+    font-size: 20px;
+}
+.page-9 .nd .nd3 .noidung3 {
+    position: absolute;
+    margin-left: 0;
+    top: 300px;
+    text-align: left;
+    font-size: 15px;
+}
+.page-10 {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background-color: rgb(226, 218, 209);
+}
+.page-10 h2 {
+    position: absolute;
+    margin-left: 590px;
+    font-family: Quicksand-Bold;
+}
+.page-10 #email-box {
+    position: absolute;
+    margin-left: 410px;
+    top: 50px;
+    background-color: rgb(255, 255, 255);
+    padding: 12px 140px 12px 20px;
+    border: 1px solid rgb(203, 195, 82);
+    border-radius: 30px;
+    font-weight: normal;
+    color: #818181;
+    font-family: Quicksand-Medium;
+}
+.page-10 #phone-box {
+    position: absolute;
+    margin-left: 740px;
+    top: 50px;
+    background-color: rgb(255, 255, 255);
+    padding: 12px 187px 12px 20px;
+    border: 1px solid rgb(203, 195, 82);
+    border-radius: 30px;
+    font-weight: normal;
+    color: #818181;
+    font-family: Quicksand-Medium;
+}
+.page-10 #register {
+    position: absolute;
+    margin-left: 1070px;
+    top: 40px;
+    font-size: 18px;
+    background-color: rgb(203, 195, 82);
+    padding: 15px 40px 15px 40px;
+    border-radius: 30px;
+    font-weight: normal;
+    font-family: Quicksand-Regular;
+}
+.page-10 .line-bottom {
+    border-bottom: 1px solid rgb(188, 188, 188);
+    height: 35%;
+    width: 90%;
+    margin: auto; /*Căn gạch ra giữa*/
+}
+.page-10 #infor {
+    margin-left: 5%;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    font-family: Quicksand-Bold;
+}
+.page-10 .infor{
+    margin-left: 5%;
+    font-weight: normal;
+    font-size: 17px;
+    font-family: Quicksand-Medium;
+}
+.page-10 .icon {
+    margin-right: 15px;
+}
+.page-10 #logo-bocongthuong {
+    width: 160px;
+    height: 60px;
+    margin-left: 80px;
+}
+.page-10 .customer {
+    position: absolute;
+    margin-left: 37%;
+    top: 180px;
+    font-family: Quicksand-Bold;
+}
+.page-10 .kh1 {
+    position: absolute;
+    margin-left: 37%;
+    top: 229px;
+    font-size: 17px;
+    font-family: Quicksand-Medium;
+}
+.page-10 .kh2 {
+    position: absolute;
+    margin-left: 37%;
+    top: 266px;
+    font-size: 17px;
+    font-family: Quicksand-Medium;
+}
+.page-10 .kh3 {
+    position: absolute;
+    margin-left: 37%;
+    top: 303px;
+    font-size: 17px;
+    font-family: Quicksand-Medium;
+}
+.page-10 .product {
+    position: absolute;
+    margin-left: 61%;
+    top: 180px;
+    font-family: Quicksand-Bold;
+}
+.page-10 .sp1 {
+    position: absolute;
+    margin-left: 61%;
+    top: 229px;
+    font-size: 17px;
+    font-family: Quicksand-Medium;
+}
+.page-10 .sp2 {
+    position: absolute;
+    margin-left: 61%;
+    top: 266px;
+    font-size: 17px;
+    font-family: Quicksand-Medium;
+}
+.page-10 .connect {
+    position: absolute;
+    margin-left: 83%;
+    top: 180px;
+    font-family: Quicksand-Bold;
+}
+.page-10 #fb {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin-left: 1060px;
+    top: 240px;
+}
+.page-10 #ins {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin-left: 1110px;
+    top: 240px;
+}
+.page-10 #ytb {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    margin-left: 1165px;
+    top: 236px;
+}
+.page-10 #zalo {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin-left: 1230px;
+    top: 240px;
+}
+.page-11 {
+    position: relative;
+    width: 100%;
+    height: 25px;
+    background-color: rgba(82, 61, 30, 0.886);
+}
+.page-11 #banquyen {
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 90px;
+    color: aliceblue;
+    font-weight: normal;
+    font-size: 16px;
+    font-family: Quicksand-Medium;
+}
+.page-11 .icon {
+    height: 13px;
+    margin-top: 4px;
+    fill: aliceblue;
+}
+.page-11 #desigh {
+    position: absolute;
+    margin-top: 4px;
+    color: aliceblue;
+    font-weight: normal;
+    font-size: 16px;
+    margin-left: 1200px;
+    font-family: Quicksand-Medium;
+}
